@@ -1,0 +1,15 @@
+#galeria{
+    margin-left:auto;
+    margin-right: auto;
+    background: #789;
+    padding: 10px;
+}
+#galeria > img{
+    width: 300px;
+    height: auto;
+    transition: 2s;
+  }
+  #galeria > img:hover{
+    transform: scale(2) rotate(720deg);
+
+  }

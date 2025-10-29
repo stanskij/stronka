@@ -1,0 +1,34 @@
+<form name="formularz" onSubmit="return false;">
+					<i>Podaj pierwszą liczbę: </i>
+					<input type="number" min="1" max="10" name="liczba1" id="liczba1" /><br /><br />
+					<i>Podaj drugą liczbę: </i>
+					<input type="number" min="1" max="10" name="liczba2" id="liczba2" /><br /><br />
+                <div style="display:flex;flex-direction:row;">
+                    <button onClick="tabliczka()">wykonaj</button>
+
+                </div>  
+					<br /><br />
+					
+				</form>
+                <p id="wynik" name="wynik">sdsdsdsd </p>
+<script>
+
+function tabliczka(){
+    var a=parseInt(document.getElementById("liczba1").value);       
+	var b=parseInt(document.getElementById("liczba2").value);
+
+    document.getElementById("wynik").innerHTML = "<table border=\"1\" style=\"text-align:right;}\"><tr><td></td>";
+      for (i = 1; i <= b; i++){
+        document.getElementById("wynik").innerHTML = "<td>" + i + "</td>";
+        }
+        document.getElementById("wynik").innerHTML = "</tr>";
+      for (i = 1; i <= a; i++){
+        document.getElementById("wynik").innerHTML = "<tr><td>" + i + "</td>";
+              for (j = 1; j <= b; j++){
+                document.getElementById("wynik").innerHTML = "<td>" + i * j + "</td>";
+                        };
+                        document.getElementById("wynik").innerHTML ="</tr>";
+            };
+            document.getElementById("wynik").innerHTML = "</table>";
+          }
+       </script>

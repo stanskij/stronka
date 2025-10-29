@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+  }
+  /* Style the container */  
+
+  /* Style the header */
+
+
+  header > img {
+    height: auto;
+    width: 100%;
+  }
+ 
+
+  /* Style the top navigation bar */
+nav {
+  height: auto;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+  }
+
+  /* Clear floats after the columns */
+footer{
+    content: "";
+    display: table;
+    clear: both;
+    background-color: black;
+    border: 1px dotted rgb(0, 255, 255);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+#toTopButton
+{
+    background-color: teal;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
+#toTopButton:hover
+{
+    background-color: blue;
+}
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:800px) {
+    .column {
+      width: 100%;
+    }
+  }

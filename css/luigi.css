@@ -1,0 +1,158 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body{
+    background-color: #65ec3c;
+    
+}
+
+#container{
+    max-width: 1200px;
+    margin-top: 50px;
+    border: 1px solid #e1e1e1;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 1);
+}
+
+header {
+	height: auto;
+	background-color: rgb(87, 85, 0);
+	padding: 5px;
+}
+
+header img {
+	width: 100%;
+	height:auto;
+}
+
+nav {
+	width: auto;
+	padding-left: auto;
+	padding-right: auto;
+    margin-bottom: 5px;
+	background-color: rgb(210, 235, 70);
+	height: auto;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+
+main {
+	height: auto;
+    display:flex;
+    flex-direction: row;
+	min-height: 400px;
+	border-radius: 0px 25px;
+	background-color: rgba(150, 188, 197, 0.1);
+	padding: 10px;
+}
+article {
+	width:75%;
+	height: 100%;
+    padding: 20px;
+	background-color: aquamarine;
+    font-family: 'Merienda', cursive;
+    border-radius: 0px;
+	border-left: 5px solid rgba(0, 0, 0, 0.1);
+    
+}
+aside {
+	height: 100%;
+	width:25%;
+	background-color:rgb(210, 235, 70);
+	padding: 10px;
+}
+
+aside > ul> li > a {
+	width: 100%;
+}
+
+section {
+    background-color: #f01b37;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+	background-color: #f01b37;
+	margin-top: 0px;
+	width: 150px;
+	text-align: center;
+	color: aqua;
+}
+
+footer {
+	clear: both;
+	background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    height: 50px;;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table, th, td{
+	border: 1px solid rgb(87, 85, 202);
+}
+
+th {
+	height: 100px;
+	font-size: x-small;
+  }
+
+  td {
+	height: 70px;
+	padding: 2px;
+	text-align: center;
+	vertical-align: middle;
+	 }
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  td:hover {background-color: #58dd47;}
+
+@media (max-width: 800px) {
+	
+	/* Header */
+	header {
+		flex-direction: column;
+	}
+	
+	.brand {
+		margin-bottom: 25px;
+	}
+	
+	nav ul {
+		text-align: center;
+	}
+	
+	/* Main */
+	main {
+		flex-direction: column;
+	}
+	
+	article, aside {
+		width: 100%;
+	
+	}
+	
+	/* Article */
+	article h1,
+	article h2 {
+		text-align: center;
+	}
+	
+	article img {
+		display: block;
+		width: 100%;
+		margin: 30px auto;
+	}
+	
+	/* Aside */
+	aside {
+		border: 0;
+	}
+}

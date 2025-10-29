@@ -1,0 +1,16 @@
+document.write("<b>napis ze skryptu</b>");
+text = "Ala ma kota";
+document.write("<br />Zmienna text ma wartość: " + text);
+document.write("<br />text.length - ilość znaków w tekscie: " + text.length);
+document.write("<br />text.charCodeAt(4) - kod znaku w miejscu 4: " + text.charCodeAt(4));
+document.write("<br />text.toUpperCase() - zamiana na duże litery: " + text.toUpperCase());
+document.write("<br />text.toLowerCase() - zamiana na małe litery: " + text.toLowerCase());
+document.write("<br />text.indexOf('kot') - gdzie zaczyna się słowo kot: " + text.indexOf('kot'));
+document.write("<br />text.lastIndexOf('a') - ostatnie wystąpienie znaku a: " + text.lastIndexOf('a'));
+document.write("<br />text.encodeURI() - kodowanie znaków typu spacja, #, & itp: " + text.encodeURI());
+document.write("<br />text.decodeURI('Ala%20ma%20kota') - odkodowanie łańcucha znaków: " + text.decodeURI('Ala%20ma%20kota'));
+document.write("<br />: " + text.substr(7,4));
+document.write("<br />: " + text.substring(0,3));
+document.write("<br />: " + text.slice(0,3));
+document.write("<br />: " + text.split(' ',2));
+document.write("<br />: " + text.replace('Ala','Ola'));
